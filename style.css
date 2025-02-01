@@ -1,64 +1,4 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdf6e3;
-    color: #333;
-    text-align: center;
-}
-
-header {
-    background: #222;
-    color: white;
-    padding: 40px;
-    font-size: 24px;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #444;
-}
-
-nav ul li {
-    display: inline;
-    padding: 15px 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-section {
-    margin: 50px auto;
-    padding: 40px;
-    max-width: 800px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    section {
-        width: 90%;
-        padding: 20px;
-    }
-}
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -69,7 +9,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
 
@@ -89,116 +29,20 @@ nav ul li a {
 }
 
 section {
-    margin: 40px;
+    margin: 40px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Şeffaf arka plan */
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    max-width: 900px;
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
     margin-top: 20px;
 }
 
-/* Mobil Uyumlu Arka Plan */
-@media (max-width: 768px) {
-    body {
-        background: url('https://raw.githubusercontent.com/karacamusic/Karaca/main/arkaplan.jpg') no-repeat center center fixed;
-        background-size: contain; /* Mobilde fazla zoom yapmaması için */
-    }
-}
-/* --- ORTALAMA AYARI --- */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-/* --- LİNK RENGİ VE EFEKTLER --- */
-a {
-    color: white; /* Mavi yerine beyaz yaptık */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #FFD700; /* Hover efekti: Altın rengi */
-    transition: 0.3s;
-}
-
-/* --- İletişim Bölümü İçin Özel Ayar --- */
-#contact p a {
-    color: white; /* Mavi linkleri beyaz yaptık */
-}
-
-#contact p a:hover {
-    color: #FFD700; /* Üzerine gelince altın rengi */
-}
-/* --- HEADER VE BAŞLIK DÜZENLEMESİ --- */
-header {
-    background: rgba(0, 0, 0, 0.7); /* Hafif koyu arka plan */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    z-index: 10;
-    width: 100%;
-}
-/* --- HEADER VE BAŞLIK DÜZENLEMESİ --- */
-header {
-    background: rgba(0, 0, 0, 0.8); /* Koyu arka plan */
-    color: white;
-    padding: 40px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-}
-
-/* --- ABOUT (Hakkımızda) KISMINI OKUNAKLI YAPMA --- */
-#about {
-    background: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz arka plan */
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-/* --- HEADER (Karaca Music Başlığı) --- */
-header {
-    background: rgba(0, 0, 0, 0.8); /* Koyu arka plan */
-    color: white;
-    padding: 40px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-}
-
-/* --- ABOUT (Hakkımızda) Bölümünü Belirgin Yap --- */
-#about {
-    background: rgba(255, 255, 255, 0.85); /* Hafif şeffaf beyaz arka plan */
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge ekledik */
-}
-/* --- YOUTUBE VİDEOLARINI YAN YANA VE KÜÇÜK HALE GETİR --- */
 .project-videos {
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +51,19 @@ header {
 }
 
 .project-videos iframe {
-    width: 45%; /* Her video %45 genişlikte olacak */
-    height: 250px; /* Videolar daha küçük olacak */
+    width: 45%;
+    height: 250px;
     border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+
+    .project-videos iframe {
+        width: 90%;
+        height: 200px;
+    }
 }
