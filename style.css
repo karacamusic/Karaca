@@ -109,3 +109,33 @@ footer {
         background-size: contain; /* Mobilde fazla zoom yapmaması için */
     }
 }
+/* --- ORTALAMA AYARI --- */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* --- LİNK RENGİ VE EFEKTLER --- */
+a {
+    color: white; /* Mavi yerine beyaz yaptık */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFD700; /* Hover efekti: Altın rengi */
+    transition: 0.3s;
+}
+
+/* --- İletişim Bölümü İçin Özel Ayar --- */
+#contact p a {
+    color: white; /* Mavi linkleri beyaz yaptık */
+}
+
+#contact p a:hover {
+    color: #FFD700; /* Üzerine gelince altın rengi */
+}
