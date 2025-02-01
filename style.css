@@ -139,3 +139,15 @@ a:hover {
 #contact p a:hover {
     color: #FFD700; /* Üzerine gelince altın rengi */
 }
+/* --- HEADER VE BAŞLIK DÜZENLEMESİ --- */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Hafif koyu arka plan */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
