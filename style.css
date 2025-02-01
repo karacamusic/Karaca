@@ -198,3 +198,16 @@ header {
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge ekledik */
 }
+/* --- YOUTUBE VİDEOLARINI YAN YANA VE KÜÇÜK HALE GETİR --- */
+.project-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-videos iframe {
+    width: 45%; /* Her video %45 genişlikte olacak */
+    height: 250px; /* Videolar daha küçük olacak */
+    border-radius: 10px;
+}
