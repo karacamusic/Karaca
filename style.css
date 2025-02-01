@@ -151,3 +151,26 @@ header {
     z-index: 10;
     width: 100%;
 }
+/* --- HEADER VE BAŞLIK DÜZENLEMESİ --- */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Koyu arka plan */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+/* --- ABOUT (Hakkımızda) KISMINI OKUNAKLI YAPMA --- */
+#about {
+    background: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz arka plan */
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
