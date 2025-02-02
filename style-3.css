@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('arkaplan.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+
+/* HEADER - KARACA MUSIC ALANI */
+.header-container {
+    background: rgba(0, 0, 0, 0.75); /* Daha belirgin bir siyah */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 500px; /* Daha dar bir alan */
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.slogan {
+    font-size: 16px;
+    color: #FFD700;
+}
+
+/* ABOUT - Yazı Alanını Sınırla */
+#about {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9); /* Daha açık arka plan */
+    border-radius: 10px;
+    line-height: 1.6; /* Okuma deneyimini iyileştirir */
+}
+
+/* PROJECT VIDEOS - YouTube Playlist Görünümü */
+.project-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-videos iframe {
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ALBÜM LİSTESİ */
+.albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.album {
+    display: block;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.album p {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* CONTACT - Linkleri Daha Belirgin Yap */
+#contact a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #FFD700; /* Altın rengi hover efekti */
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header-content {
+        max-width: 90%;
+    }
+
+    #about {
+        max-width: 90%;
+    }
+
+    .project-videos iframe {
+        width: 90%;
+        height: 180px;
+    }
+
+    .albums-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
