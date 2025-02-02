@@ -57,12 +57,11 @@ header .logo img {
     margin: 10px 0;
 }
 
-#albums {
+#projects {
     padding: 40px 10%;
-    background-color: #fff;
 }
 
-#albums h2 {
+#projects h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -92,6 +91,26 @@ header .logo img {
     margin-top: 10px;
     color: #333;
     font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 footer {
@@ -129,12 +148,20 @@ footer {
         font-size: 1.1em;
     }
     
-    #albums h2 {
+    #projects h2 {
         font-size: 2em;
     }
     
     .album-container {
         flex-direction: column;
         align-items: center;
+    }
+    
+    #contact {
+        padding: 20px 5%;
+    }
+    
+    #contact h2 {
+        font-size: 2em;
     }
 }
