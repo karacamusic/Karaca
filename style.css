@@ -5,22 +5,23 @@ body {
     background: url('arkaplan.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
-    color: black;
+    color: white;
 }
 
-/* HEADER */
+/* HEADER (SİYAH BANT + ORTALAMA) */
 .header-container {
-    background: rgba(0, 0, 0, 0.75);
-    padding: 40px 20px;
+    background: black;
+    padding: 30px 0;
     text-align: center;
 }
 
 .header-content {
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* LOGO */
 .logo {
     width: 100px;
     height: 100px;
@@ -29,67 +30,85 @@ body {
     display: block;
 }
 
+/* BAŞLIK */
 .header-content h1 {
     font-size: 36px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
 }
 
+/* SLOGAN */
 .slogan {
     font-size: 16px;
     color: #FFD700;
+    margin-top: 5px;
 }
 
-/* ABOUT */
-#about {
-    max-width: 650px;
-    margin: 30px auto;
+/* MENÜ */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* GENEL BÖLÜM AYARLARI */
+section {
+    margin: 40px auto;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    line-height: 1.6;
+    max-width: 900px;
 }
 
-/* PROJECTS */
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* YOUTUBE VİDEOLARI */
+.project-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .project-videos iframe {
     width: 40%;
     height: 200px;
     border-radius: 10px;
 }
 
-/* CONTACT */
-#contact a {
-    color: black;
+/* LİNK RENKLERİ */
+a {
+    color: white !important;
+    text-decoration: none;
     font-weight: bold;
-    text-decoration: underline;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 3px;
 }
 
-#contact a:hover {
-    color: #FFD700;
+a:hover {
+    color: #FFD700 !important;
     transition: 0.3s;
 }
 
-/* FOOTER */
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    margin-top: 30px;
-    color: white;
-}
-
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE TASARIM */
 @media (max-width: 768px) {
-    .header-content {
-        max-width: 90%;
-    }
-
-    #about {
-        max-width: 90%;
-    }
-
     .project-videos iframe {
         width: 90%;
         height: 180px;
