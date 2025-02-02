@@ -132,3 +132,24 @@ footer {
         align-items: center;
     }
 }
+#contact a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #FFD700; /* Altın rengi alt çizgi ekleyelim */
+    padding-bottom: 3px;
+}
+
+#contact a:hover {
+    color: #FFD700;
+    transition: 0.3s;
+}
+.header-content {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.2; /* Satır aralığını biraz sıkıştıralım */
+}
+#about {
+    background: rgba(255, 255, 255, 0.95); /* Daha açık ve okunaklı */
+    padding: 30px;
+}
