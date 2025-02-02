@@ -32,15 +32,29 @@ header .logo img {
     margin-top: 10px;
 }
 
-#latest-video {
+#about {
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 10%;
 }
 
-#latest-video iframe {
-    width: 80%;
-    height: 400px;
-    border: none;
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
 }
 
 #albums {
@@ -58,6 +72,7 @@ header .logo img {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .album {
@@ -87,4 +102,39 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    #about {
+        padding: 20px 5%;
+    }
+    
+    #about h2 {
+        font-size: 2em;
+    }
+    
+    #about p {
+        font-size: 1.1em;
+    }
+    
+    #albums h2 {
+        font-size: 2em;
+    }
+    
+    .album-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
