@@ -5,20 +5,20 @@ body {
     background: url('arkaplan.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
-    color: black; /* Yazıları siyah yaparak okunurluğu artırdık */
+    color: black;
 }
 
 /* HEADER */
 .header-container {
-    background: rgba(255, 255, 255, 0.8); /* Daha açık bir arka plan */
-    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.75); /* Şeffaf siyah arka plan */
+    padding: 40px 20px;
     text-align: center;
 }
 
 .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.2; /* Satır aralığını biraz sıkıştıralım */
 }
 
 .logo {
@@ -32,54 +32,66 @@ body {
 .header-content h1 {
     font-size: 36px;
     font-weight: bold;
-    color: black; /* Başlık yazısı siyah */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .slogan {
     font-size: 16px;
-    color: black; /* Slogan yazısı siyah */
+    color: #FFD700;
 }
 
-/* ALBÜM LİSTESİ */
-.albums-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* ABOUT */
+#about {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    line-height: 1.6;
 }
 
-.album {
-    display: block;
-    text-align: center;
-    width: 200px;
-    text-decoration: none;
-    color: black; /* Albüm yazıları siyah */
-}
-
-.album img {
-    width: 100%;
+/* PROJECTS */
+.project-videos iframe {
+    width: 40%;
+    height: 200px;
     border-radius: 10px;
 }
 
-.album p {
-    background: rgba(255, 255, 255, 0.6);
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 5px;
+/* CONTACT */
+#contact a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 3px;
+}
+
+#contact a:hover {
+    color: #FFD700;
+    transition: 0.3s;
 }
 
 /* FOOTER */
 footer {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     margin-top: 30px;
-    color: black; /* Footer yazıları siyah */
+    color: white;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    .albums-container {
-        flex-direction: column;
-        align-items: center;
+    .header-content {
+        max-width: 90%;
+    }
+
+    #about {
+        max-width: 90%;
+    }
+
+    .project-videos iframe {
+        width: 90%;
+        height: 180px;
     }
 }
