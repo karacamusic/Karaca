@@ -5,12 +5,12 @@ body {
     background: url('arkaplan.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: black; /* Yazıları siyah yaparak okunurluğu artırdık */
 }
 
 /* HEADER */
 .header-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8); /* Daha açık bir arka plan */
     padding: 30px 0;
     text-align: center;
 }
@@ -32,13 +32,12 @@ body {
 .header-content h1 {
     font-size: 36px;
     font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: black; /* Başlık yazısı siyah */
 }
 
 .slogan {
     font-size: 16px;
-    color: #FFD700;
+    color: black; /* Slogan yazısı siyah */
 }
 
 /* ALBÜM LİSTESİ */
@@ -54,7 +53,7 @@ body {
     text-align: center;
     width: 200px;
     text-decoration: none;
-    color: white;
+    color: black; /* Albüm yazıları siyah */
 }
 
 .album img {
@@ -63,7 +62,7 @@ body {
 }
 
 .album p {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.6);
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
@@ -71,9 +70,10 @@ body {
 
 /* FOOTER */
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 10px;
     margin-top: 30px;
+    color: black; /* Footer yazıları siyah */
 }
 
 /* RESPONSIVE DESIGN */
