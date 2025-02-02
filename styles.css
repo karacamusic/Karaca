@@ -346,3 +346,15 @@ body {
     color: #FFD700; /* Altın rengi */
     margin-top: 5px;
 }
+.youtube-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.youtube-container iframe {
+    width: 300px; /* Küçültülmüş YouTube Çerçevesi */
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid white; /* Çerçeve ekleyelim */
+}
