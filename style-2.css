@@ -105,3 +105,30 @@ footer {
         align-items: center;
     }
 }
+.header-container {
+    background: rgba(0, 0, 0, 0.75); /* Daha belirgin bir siyah */
+    padding: 40px 20px;
+}
+
+.header-content {
+    max-width: 500px; /* Daha dar bir alan */
+    margin: 0 auto;
+}
+#about {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9); /* Daha açık arka plan */
+    border-radius: 10px;
+    line-height: 1.6; /* Okuma deneyimini iyileştirir */
+}
+#contact a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #FFD700; /* Altın rengi hover efekti */
+    transition: 0.3s;
+}
