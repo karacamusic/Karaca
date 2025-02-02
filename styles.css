@@ -229,3 +229,47 @@ body {
     background-color: #F5F5DC; /* Bej Rengi */
     color: black; /* Yazılar için kontrast renk */
 }
+/* --- Logo Orijinal Yuvarlak Halde Kalsın --- */
+.logo {
+    width: 100px; /* Logonun büyüklüğünü ayarla */
+    height: 100px;
+    border-radius: 50%; /* Yuvarlak halde kalmasını sağlıyor */
+    display: block;
+    margin: 20px auto; /* Ortalamak için */
+}
+
+/* --- Başlık ve Slogan Siyah Bir Bandın Üzerinde Gözüksün --- */
+.title-container {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.title-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 0;
+}
+
+.title-container .slogan {
+    font-size: 16px;
+    color: #FFD700; /* Altın rengi slogan */
+    margin-top: 5px;
+}
+.youtube-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.youtube-container iframe {
+    width: 320px; /* Daha küçük bir çerçeve */
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid white; /* Çerçeve ekleyelim */
+}
