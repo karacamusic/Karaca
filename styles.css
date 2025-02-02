@@ -190,3 +190,42 @@ a:hover {
     color: #FFD700; /* Altın rengi hover efekti */
     transition: 0.3s;
 }
+header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Logo ile başlık arasında mesafe */
+}
+
+/* Eğer logonun içindeki img etiketi header içindeyse, şu kodu ekleyelim */
+header img {
+    max-height: 60px; /* Logoyu aşırı büyük yapmadan boyutunu ayarla */
+}
+.project-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-videos iframe {
+    width: 40%; /* Daha küçük hale getirdik */
+    height: 200px; /* Yüksekliği azalttık */
+    border-radius: 10px;
+}
+
+/* Mobilde tam genişlik olacak */
+@media (max-width: 768px) {
+    .project-videos iframe {
+        width: 90%;
+        height: 180px;
+    }
+}
+body {
+    background-color: #F5F5DC; /* Bej Rengi */
+    color: black; /* Yazılar için kontrast renk */
+}
