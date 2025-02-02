@@ -158,10 +158,37 @@ footer {
     }
     
     #contact {
-        padding: 20px 5%;
-    }
-    
-    #contact h2 {
-        font-size: 2em;
-    }
+    text-align: center;
+    padding: 40px 10%;
+    background-color: #1f1f1f;
+    color: white;
+    margin-bottom: 20px; /* Added margin to separate from the footer */
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px; /* Added margin-top to move footer away from the contact section */
 }
