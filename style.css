@@ -2,14 +2,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: black;
+    background: url('arkaplan.jpg') no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
     color: white;
 }
 
 /* HEADER */
 .header-container {
-    background: black;
+    background: rgba(0, 0, 0, 0.8);
     padding: 30px 0;
     text-align: center;
 }
@@ -32,6 +33,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .slogan {
@@ -65,6 +67,13 @@ body {
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 30px;
 }
 
 /* RESPONSIVE DESIGN */
