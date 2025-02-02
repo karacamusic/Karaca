@@ -12,11 +12,11 @@ body {
 }
 
 header {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 20px 10%;  /* Reduced padding to make it more compact */
-    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 
 header .logo img {
     width: 120px;
@@ -159,4 +159,34 @@ footer {
     #contact h2 {
         font-size: 2em;
     }
+}
+.project-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-videos iframe {
+    width: 45%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Mobilde tek sütun */
+@media (max-width: 768px) {
+    .project-videos iframe {
+        width: 90%;
+        height: 200px;
+    }
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFD700; /* Altın rengi hover efekti */
+    transition: 0.3s;
 }
