@@ -309,3 +309,40 @@ body {
     color: #FFD700; /* Altın rengi */
     margin-top: 5px;
 }
+/* --- HEADER (SİYAH BANT + ORTALAMA) --- */
+.header-container {
+    background: black; /* Siyah arka plan */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- LOGO YENİDEN GELSİN VE YUVARLAK KALSIN --- */
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Yuvarlak kalmasını sağlıyor */
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* --- BAŞLIK (Karaca Music) --- */
+.header-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+/* --- SLOGAN (Bridging Cultures...) --- */
+.slogan {
+    font-size: 16px;
+    color: #FFD700; /* Altın rengi */
+    margin-top: 5px;
+}
