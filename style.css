@@ -2,18 +2,51 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('https://raw.githubusercontent.com/karacamusic/Karaca/main/arkaplan.jpg') no-repeat center center fixed;
+    background: url('arkaplan.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     color: white;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    font-size: 28px;
+/* HEADER (SİYAH BANT + ORTALAMA) */
+.header-container {
+    background: black;
+    padding: 30px 0;
+    text-align: center;
 }
 
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* BAŞLIK */
+.header-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+/* SLOGAN */
+.slogan {
+    font-size: 16px;
+    color: #FFD700;
+    margin-top: 5px;
+}
+
+/* MENÜ */
 nav ul {
     list-style: none;
     padding: 0;
@@ -31,6 +64,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* GENEL BÖLÜM AYARLARI */
 section {
     margin: 40px auto;
     padding: 25px;
@@ -39,6 +73,7 @@ section {
     max-width: 900px;
 }
 
+/* FOOTER */
 footer {
     background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -46,6 +81,7 @@ footer {
     margin-top: 30px;
 }
 
+/* YOUTUBE VİDEOLARI */
 .project-videos {
     display: flex;
     flex-wrap: wrap;
@@ -53,20 +89,28 @@ footer {
     gap: 20px;
 }
 
-project-videos iframe {
-    width: 45%;
-    height: 250px;
+.project-videos iframe {
+    width: 40%;
+    height: 200px;
     border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        background-size: contain;
-    }
+/* LİNK RENKLERİ */
+a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+a:hover {
+    color: #FFD700 !important;
+    transition: 0.3s;
+}
+
+/* RESPONSIVE TASARIM */
+@media (max-width: 768px) {
     .project-videos iframe {
         width: 90%;
-        height: 200px;
+        height: 180px;
     }
 }
